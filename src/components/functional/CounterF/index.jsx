@@ -19,7 +19,7 @@ function Color() {
     useEffect(() => {
         setInterval(() => {
             random();
-        }, 2000);
+        }, 1);
     }, []);
 
     return (
