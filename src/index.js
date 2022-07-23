@@ -1,11 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import TextInput from "./components/functional/TextInput";
-import "./index.css";
+import ReactDOM from "react-dom";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+import App from "./App";
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(
   <React.StrictMode>
-    <TextInput defaultValue='nesto 2' />
-  </React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  rootElement
 );
